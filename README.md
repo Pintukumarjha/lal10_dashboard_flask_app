@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📊 LAL10 Dashboard: Flask & BigQuery Application
 
 This is a Flask-based web dashboard designed to track manufacturing and production statuses for the LAL10 project, retrieving aggregated data from Google BigQuery.
@@ -14,3 +15,6 @@ This application requires specific files for credentials that must be available 
 
 ```env
 FLASK_SECRET_KEY='your_long_random_secret_key_here'
+=======
+# lal10_dashboard_flask_app
+>>>>>>> be71e43081936c61c934a7104476c7bab9b84967
