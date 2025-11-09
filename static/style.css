@@ -1,0 +1,177 @@
+/* General Body and Container */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-page-container {
+    display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    height: 600px;
+}
+
+/* Left Column Styling */
+.left-column {
+    flex: 1;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Added for better spacing */
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+.brand-sub-name {
+    font-size: 1.5rem; /* Adjust this to change the size */
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    margin-top: 10px; /* Adjust this to change the spacing below "Lal10" */
+}
+
+
+/* Right Column Styling */
+.right-column {
+    flex: 1;
+    background-color: #121212;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px 20px 20px;
+}
+
+.login-form-box {
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    text-align: center;
+    color: white;
+}
+
+/* Form Inputs and Button */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #4285f4;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Added to ensure padding doesn't affect width */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3367d6; /* A slightly darker blue on focus */
+}
+
+.input-group input:hover {
+    border-color: white; /* Only the border color will change to white on hover */
+}
+
+
+
+/*
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+*/
+.login-button {
+    width: 100%;
+    padding: 12px 24px; /* Added more horizontal padding for the shape */
+    background-color: #D3E3FD; /* Changed to light blue color */
+    color: #0B57D0; /* Changed text color to dark blue */
+    border: none;
+    border-radius: 24px; /* Makes the button rounder, like a pill */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: white; /* A slightly darker shade for the hover effect */
+}
+
+
+
+/* Error Message */
+.error-message {
+    color: #d93025;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .login-page-container {
+        flex-direction: column;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .left-column {
+        height: 200px;
+        padding: 40px 20px;
+    }
+
+    .right-column {
+        padding: 40px 20px;
+    }
+}

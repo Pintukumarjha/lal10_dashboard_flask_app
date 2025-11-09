@@ -1,0 +1,19 @@
+# --- Security / Sensitive Files (CRITICAL) ---
+.env
+service-account-key.json # The JSON file used for BigQuery credentials
+
+# --- Python Generated Files ---
+__pycache__/
+*.pyc
+
+# --- Virtual Environments ---
+/venv
+/env
+/conda_env
+
+# --- Flask Specific Exclusions ---
+instance/
+
+# --- Operating System Exclusions ---
+.DS_Store # macOS
+Thumbs.db # Windows
