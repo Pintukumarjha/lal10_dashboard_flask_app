@@ -17,3 +17,4 @@ instance/
 # --- Operating System Exclusions ---
 .DS_Store # macOS
 Thumbs.db # Windowsservice-account-key.json
+service-account-key.json
